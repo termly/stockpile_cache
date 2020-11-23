@@ -58,7 +58,7 @@ module Stockpile
     end
 
     def parsed_configuration
-      YAML.safe_load(
+      YAML.load(
         ERB.new(
           raw_configuration
         ).result
